@@ -1,0 +1,17 @@
+/* Add these styles to your CSS file (App.css) */
+
+@media (max-width: 768px) {
+    .hidden {
+      display: none;
+    }
+    .md\\:hidden {
+      display: block;
+    }
+    .md\\:flex {
+      display: none;
+    }
+    .md\\:space-x-20 {
+      margin-right: 0;
+    }
+  }
+  

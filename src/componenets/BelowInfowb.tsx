@@ -1,21 +1,27 @@
-import React from 'react'
+import React from 'react';
 
 const BelowInfowb = () => {
   return (
-    <div className='grid grid-cols-2 bg-white p-20'>
-        <div className='ml-20 mt-20'>
-            <h1 className='text-4xl font-bold mt-14'>Nullam Fermentum <br></br>Tempus Semper</h1>
-            <p className='mt-5 text-sm font-ubuntu text-[#969697]'>Excepteur sint occaecat cupidatat non proident sunt iculpa qui <br></br>officia deserunt mollit anim est. laborum sed perspiciatis unde <br></br> omnis natus error sit voluptatem accusantium dolore mque <br></br> laudantium totam rem aperiam.</p>
-            <p className='mt-5 text-sm font-ubuntu text-[#969697]'>Dicta sunt explicabo. nemo enim ipsam voluptatem quia magni <br></br> voluptassit aspernatur aut odit aut fugit sed quia consequuntur <br></br> magni dolores eos.</p>
-            
-        </div>
-        <div className='bg-gray-400 h-96 w-96 rounded-md m-20 '>
-
-        </div>
-
-        
+    <div className="grid grid-cols-1 sm:grid-cols-2 bg-white p-10 sm:p-20">
+      <div className="ml-0 sm:ml-20 mt-10 sm:mt-20">
+        <h1 className="text-3xl sm:text-4xl font-bold mt-4 sm:mt-14">
+          Nullam Fermentum <br /> Tempus Semper
+        </h1>
+        <p className="mt-5 text-sm font-ubuntu text-[#969697]">
+          Excepteur sint occaecat cupidatat non proident sunt iculpa qui <br className="hidden sm:block" />
+          officia deserunt mollit anim est. laborum sed perspiciatis unde <br className="hidden sm:block" />
+          omnis natus error sit voluptatem accusantium dolore mque <br className="hidden sm:block" />
+          laudantium totam rem aperiam.
+        </p>
+        <p className="mt-5 text-sm font-ubuntu text-[#969697]">
+          Dicta sunt explicabo. nemo enim ipsam voluptatem quia magni <br className="hidden sm:block" />
+          voluptassit aspernatur aut odit aut fugit sed quia consequuntur <br className="hidden sm:block" />
+          magni dolores eos.
+        </p>
+      </div>
+      <div className="bg-gray-400 h-48 sm:h-96 w-full sm:w-96 rounded-md mt-10 sm:mt-20 mx-auto sm:mx-0"></div>
     </div>
-  )
-}
+  );
+};
 
-export default BelowInfowb
+export default BelowInfowb;

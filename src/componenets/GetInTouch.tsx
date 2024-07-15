@@ -23,10 +23,10 @@ const GetInTouch = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-20 p-6 rounded-lg shadow-md ">
-      <h1 className="font-bold text-2xl text-center mb-6">Get In Touch</h1>
+    <div className="max-w-md mx-auto mt-10 sm:mt-20 p-4 sm:p-6 rounded-lg shadow-md mb-20">
+      <h1 className="font-bold text-xl sm:text-2xl text-center mb-4 sm:mb-6">Get In Touch</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label htmlFor="name" className="sr-only">Name</label>
             <input
@@ -54,7 +54,7 @@ const GetInTouch = () => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label htmlFor="phone" className="sr-only">Phone</label>
             <input
@@ -95,17 +95,17 @@ const GetInTouch = () => {
           ></textarea>
         </div>
         <div className="flex justify-center">
-            <button
-                type="submit"
-                className="bg-[#FF6D04] text-white px-10 py-3 text-sm rounded-full"
-            >
-                SUBMIT
-            </button>
+          <button
+            type="submit"
+            className="bg-[#FF6D04] text-white px-6 sm:px-10 py-2 sm:py-3 text-sm rounded-full"
+          >
+            SUBMIT
+          </button>
         </div>
-
       </form>
     </div>
   );
 };
 
 export default GetInTouch;
+

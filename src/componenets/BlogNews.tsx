@@ -9,81 +9,33 @@ const BlogNews = () => {
   };
 
   return (
-    <div>
-      <div>
-        <h1 className='font-bold text-4xl text-center mt-20'>Blog News</h1>
-        <p className='text-sm text-[#abc] text-center mt-5'>Vestibulum posuere, turpis tempus tempus ornare, erat lorem rhoncus est</p>
+    <div className="p-4 sm:p-10">
+      <div className="text-center">
+        <h1 className="font-bold text-2xl sm:text-4xl mt-10 sm:mt-20">Blog News</h1>
+        <p className="text-sm text-[#abc] mt-2 sm:mt-5">
+          Vestibulum posuere, turpis tempus tempus ornare, erat lorem rhoncus est
+        </p>
       </div>
-      <div className='grid grid-cols-3'>
-        <div>
-          <div className='bg-[#D8D8D8] h-60 w-60 rounded-md mt-20 ml-60' onClick={handleBoxClick}></div>
-          <h3 className='font-bold ml-60 mt-4'>Integer rhoncus, orci vel <br />ultricies fermentum</h3>
-          <p className='text-[#5b5b5b] ml-60 text-xs mt-6'>12 September 2020</p>
-        </div>
-        <div>
-          <div className='bg-[#D8D8D8] h-60 w-60 rounded-md mt-20 ml-28' onClick={handleBoxClick}></div>
-          <h3 className='font-bold ml-28 mt-4'>Integer rhoncus, orci vel <br />ultricies fermentum</h3>
-          <p className='text-[#5b5b5b] ml-28 text-xs mt-6'>12 September 2020</p>
-        </div>
-        <div>
-          <div className='bg-[#D8D8D8] h-60 w-60 rounded-md mt-20' onClick={handleBoxClick}></div>
-          <h3 className='font-bold mt-4'>Integer rhoncus, orci vel <br />ultricies fermentum</h3>
-          <p className='text-[#5b5b5b] text-sm mt-6'>12 September 2020</p>
-        </div>
+      <div className='flex justify-center'>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10 sm:mt-20 ">
+        {[...Array(12)].map((_, index) => (
+          <div key={index} className="text-center sm:text-left">
+            <div
+              className="bg-[#D8D8D8] h-40 sm:h-60 w-40 sm:w-60 rounded-md mx-auto sm:ml-0 cursor-pointer"
+              onClick={handleBoxClick}
+            ></div>
+            <h3 className="font-bold mt-4 sm:ml-0">
+              Integer rhoncus, orci vel <br /> ultricies fermentum
+            </h3>
+            <p className="text-[#5b5b5b] text-xs mt-2 sm:mt-6 sm:ml-0">12 September 2020</p>
+          </div>
+        ))}
       </div>
-      <div className='grid grid-cols-3'>
-        <div>
-          <div className='bg-[#D8D8D8] h-60 w-60 rounded-md mt-20 ml-60' onClick={handleBoxClick}></div>
-          <h3 className='font-bold ml-60 mt-4'>Integer rhoncus, orci vel <br />ultricies fermentum</h3>
-          <p className='text-[#5b5b5b] ml-60 text-xs mt-6'>12 September 2020</p>
-        </div>
-        <div>
-          <div className='bg-[#D8D8D8] h-60 w-60 rounded-md mt-20 ml-28' onClick={handleBoxClick}></div>
-          <h3 className='font-bold ml-28 mt-4'>Integer rhoncus, orci vel <br />ultricies fermentum</h3>
-          <p className='text-[#5b5b5b] ml-28 text-xs mt-6'>12 September 2020</p>
-        </div>
-        <div>
-          <div className='bg-[#D8D8D8] h-60 w-60 rounded-md mt-20' onClick={handleBoxClick}></div>
-          <h3 className='font-bold mt-4'>Integer rhoncus, orci vel <br />ultricies fermentum</h3>
-          <p className='text-[#5b5b5b] text-sm mt-6'>12 September 2020</p>
-        </div>
       </div>
-      <div className='grid grid-cols-3'>
-        <div>
-          <div className='bg-[#D8D8D8] h-60 w-60 rounded-md mt-20 ml-60' onClick={handleBoxClick}></div>
-          <h3 className='font-bold ml-60 mt-4'>Integer rhoncus, orci vel <br />ultricies fermentum</h3>
-          <p className='text-[#5b5b5b] ml-60 text-xs mt-6'>12 September 2020</p>
-        </div>
-        <div>
-          <div className='bg-[#D8D8D8] h-60 w-60 rounded-md mt-20 ml-28' onClick={handleBoxClick}></div>
-          <h3 className='font-bold ml-28 mt-4'>Integer rhoncus, orci vel <br />ultricies fermentum</h3>
-          <p className='text-[#5b5b5b] ml-28 text-xs mt-6'>12 September 2020</p>
-        </div>
-        <div>
-          <div className='bg-[#D8D8D8] h-60 w-60 rounded-md mt-20' onClick={handleBoxClick}></div>
-          <h3 className='font-bold mt-4'>Integer rhoncus, orci vel <br />ultricies fermentum</h3>
-          <p className='text-[#5b5b5b] text-sm mt-6'>12 September 2020</p>
-        </div>
-      </div>
-      <div className='grid grid-cols-3'>
-        <div>
-          <div className='bg-[#D8D8D8] h-60 w-60 rounded-md mt-20 ml-60' onClick={handleBoxClick}></div>
-          <h3 className='font-bold ml-60 mt-4'>Integer rhoncus, orci vel <br />ultricies fermentum</h3>
-          <p className='text-[#5b5b5b] ml-60 text-xs mt-6'>12 September 2020</p>
-        </div>
-        <div>
-          <div className='bg-[#D8D8D8] h-60 w-60 rounded-md mt-20 ml-28' onClick={handleBoxClick}></div>
-          <h3 className='font-bold ml-28 mt-4'>Integer rhoncus, orci vel <br />ultricies fermentum</h3>
-          <p className='text-[#5b5b5b] ml-28 text-xs mt-6'>12 September 2020</p>
-        </div>
-        <div>
-          <div className='bg-[#D8D8D8] h-60 w-60 rounded-md mt-20' onClick={handleBoxClick}></div>
-          <h3 className='font-bold mt-4'>Integer rhoncus, orci vel <br />ultricies fermentum</h3>
-          <p className='text-[#5b5b5b] text-sm mt-6'>12 September 2020</p>
-        </div>
-      </div>
+      
     </div>
   );
 };
 
 export default BlogNews;
+
